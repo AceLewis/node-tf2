@@ -1,11 +1,11 @@
 module.exports = TeamFortress2;
 
 module.exports.ERecipeType = {
-  SmeltClassWeapons = 3,
-  CombineScrap = 4,
-  CombineReclaimed = 5,
-  SmeltReclaimed = 22,
-  SmeltRefined = 23
+  SmeltClassWeapons : 3, // You need the colons in these not equals
+  CombineScrap : 4,
+  CombineReclaimed : 5,
+  SmeltReclaimed : 22,
+  SmeltRefined : 23
 }
 
 
