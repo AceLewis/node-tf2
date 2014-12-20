@@ -17,6 +17,10 @@ TeamFortress2.prototype.playTF2 = function() {
   this._client.gamesPlayed([440]);
 };
 
+TeamFortress2.prototype.stopPlayTF2 = function() {
+  this._client.gamesPlayed([1]); //Just tell steam you are playing a game you don't own
+};
+
 TeamFortress2.prototype.craftItems = function(items, recipe) {
   var buffer = new Buffer(2 + 2 + 8 * items.length);
   buffer.writeInt16LE(recipe || -2, 0); // -2 is "Wildcard"

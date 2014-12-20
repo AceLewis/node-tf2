@@ -22,16 +22,20 @@ I'm probably not going to actively develop this, so feel free to fork and contin
 
 ## playTF2()
 
-Reports to Steam that you're playing Team Fortress 2.
+Reports to Steam that you're playing Team Fortress 2, you need to be playing TF2 to craft.
+
+## stopPlayTF2()
+
+Reports to Steam that you're no longer playing Team Fortress 2.
 
 ## craftItems(items, [recipe])
 
 Attempts to craft `items`, which is an array of item IDs. Use a string if the ID wouldn't fit in a Number. `recipe` is defaults to "wildcard". You can get the recipe types using the `ERecipeType` property of the module. Example:
-
+The ID you use is not the Defindex ID but the uniquie ID of that item.
 ``` javascript
 tf2.craftItems(refinedMetal.id, TeamFortress2.ERecipeType.SmeltRefined)
 ```
 
 ## deleteItem(item)
 
-Attempts to delete `item`.
+Attempts to delete `item`, use the items ID.
